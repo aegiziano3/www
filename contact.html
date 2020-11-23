@@ -54,19 +54,31 @@
   <input type="email" class="input" id="user-email" name="email" placeholder="jane@example.com">
 
   <!-- still needs editing below -->
-  <label class="label" for="property-type"> <b>Do you want to Buy or Sell or Rent?</b></label>
-  <lable class="label">Buy: </lable><input type="checkbox">
-  <lable class="label">Sell: </lable><input type="checkbox">
-  <lable class="label">Rent: </lable><input type="checkbox">
+  <label class="label" for="sale-type"> <b>Do you want to Buy or Sell or Rent?</b></label>
+  <lable class="label">Buy: </lable><input type="radio">
+  <lable class="label">Sell: </lable><input type="radio">
+  <lable class="label">Rent: </lable><input type="radio">
   <label class="label" for="property-type"><b>What property type/s are you interested in?</b> </label>
   <lable class="label">Unit: </lable><input type="checkbox">
   <lable class="label">Townhouse: </lable><input type="checkbox">
   <lable class="label">House: </lable><input type="checkbox">
+  <label class="label" for="bedrooom-number"> <b>How may bedrooms do you require?</b></label>
+  <div class="custom-select" style="width:200px;">
+    <select id="dropbox">
+      <option value="0">Select Number of Bedrooms</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5+</option>
+      
+    </select>
+  </div>
   <!-- edit above -->
   <label class="label" for="user-message"><b>Comments</b></label>
   <textarea class="input" id="user-message" name="Message" placeholder="Hello," cols="25" rows="10"></textarea>
-  <div class="buttons">
-  <button type="submit" class="button">Submit Enquiry</button>
+  <div class="button">
+  <input type="submit">
   </div>
   </form>
 

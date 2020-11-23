@@ -17,3 +17,11 @@ function next() {
 function setImg(index){
     return slider_img.setAttribute('src', "Images/"+images[index]);
 }
+
+//FAQ Page
+$(document).ready(function() {
+    $('#faq').find('dd').hide().end().find('dt').click(function() {
+        $(this).next().slideToggle();
+     });
+});
+
