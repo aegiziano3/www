@@ -1,5 +1,5 @@
-var slider_img = document.querySelector('.slide-img');
-var images= ['jones_street.jpg, bulwara_road.jpg, fig_street.jpg'];
+var slider_img = document.querySelector('.slider-img');
+var images= ['jones_street.jpg', 'bulwara_road.jpg', 'fig_street.jpg'];
 var i=0;
 
 function prev(){

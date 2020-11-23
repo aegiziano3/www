@@ -162,5 +162,50 @@
     text-decoration: none;
     }
     
-    
-    
+    /* slideshow */
+    .slider {
+        color: #111;
+    }
+    .btn1 {
+        border: none;
+        outline: none;
+        text-decoration: solid;
+        background: #888;
+        padding: 10px 30px;
+        font-size: 20px;
+        color: #ddd;
+        cursor: pointer;
+        margin: 10px auto;
+        justify-self: center;
+
+    }
+
+    .btn2 {
+        border: none;
+        outline: none;
+        background: #888;
+        padding: 10px 30px;
+        font-size: 20px;
+        color: #ddd;
+        cursor: pointer;
+        right: 0;
+        margin: 10px auto;
+    }
+
+    .btn1 :hover {
+        background: #111;
+    }
+
+    .btn2 :hover {
+        background: #111;
+    }
+    /* contact page */
+
+    .button {
+        padding: 0.5em;
+        background-color: var(--primary-color);
+        color: rgb(179, 178, 178);
+        min-width: 80px;
+        border: 1px solid var(--primary-color);
+        border-radius: 0.5em;
+    }
