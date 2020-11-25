@@ -59,7 +59,7 @@ var buy = form.bsr.value;
         form.name.select();
         return false;
     }else if (!validPhone){
-        alert(form.mobile.value + "isn't a vaild phone number");
+        alert(form.mobile.value + "isn't a vaild mobile number");
         form.mobile.focus();
         form.mobile.select();
         return false;
