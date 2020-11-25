@@ -25,3 +25,5 @@ $(document).ready(function() {
      });
 });
 
+//regular expression email
+/ (\w+)[\.\-\_]?(\w+)@(\w+)[\.](\w+)[\.]?(\w+)[\.]? /

@@ -210,10 +210,16 @@
         border-radius: 0.5em;
     }
    
-.custom-select {
-    
-}
+
     #dropbox {
         background-color: white;
     } */
-    
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+    }
+
+ 
