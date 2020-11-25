@@ -1,1 +1,42 @@
-javascript psudocode
+JavaScript psudocode
+
+//Contact Form
+
+element recieve id from document
+set variable name regular expression
+set variable value of name = form + name + value
+validate name
+
+set variable phone regular expression
+set variable value of phone = form + mobile + value
+validate phone
+
+set email regular expression
+set value of email = form + email + value
+validate email
+
+set variable buy = form + bsr + value
+
+if name does not = value
+    alert = "is not a vaild name"
+    return false
+
+if phone does not = value
+    alert = "is not a valid mobile number"
+    return false
+
+if email does not = value
+    alert = "is not a vaild email address"
+    return false
+
+if true
+    confirm "Are you sure you want to submit this form?"
+    
+    if yes
+    alert "thank you for your message"
+
+return true
+
+    if no
+
+return false
