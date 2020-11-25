@@ -44,16 +44,15 @@
 
 <h1>Contact</h1>
 
-<form id="contact" method="POST" action="https://example.com/send">
+<form id="contact" method="POST" action="formprocess.PHP" id="form" onsubmit="return formValidate()" novalidate>
   <h2>Property Enquiry</h2>
-  <label class="label" for="user-name">Name:*</label>
-  <input type="text" class="input" id="user-name" name="sender" placeholder="Jane Smith">
-  <label class="label" for="user-number">Mobile:*</label>
-  <input type="text" class="input" id="user-number" name="number" placeholder="0412345678">
-  <label class="label" for="user-email">Email:*</label>
-  <input type="email" class="input" id="user-email" name="email" placeholder="jane@example.com">
+  <label class="label" for="name">Name:*</label>
+  <input type="text" class="input" id="name" name="name" placeholder="Jane Smith">
+  <label class="label" for="mobile">Mobile:*</label>
+  <input type="text" class="input" id="phone" name="phone" placeholder="0412345678">
+  <label class="label" for="email">Email:*</label>
+  <input type="email" class="input" id="email" name="email" placeholder="jane@example.com">
 
-  <!-- still needs editing below -->
   <label class="label" for="sale-type"> <b>Do you want to Buy or Sell or Rent?</b></label>
   <lable class="label">Buy: </lable><input type="radio">
   <lable class="label">Sell: </lable><input type="radio">
@@ -63,7 +62,7 @@
   <lable class="label">Townhouse: </lable><input type="checkbox">
   <lable class="label">House: </lable><input type="checkbox">
   <label class="label" for="bedrooom-number"> <b>How may bedrooms do you require?</b></label>
-  <div class="custom-select" style="width:200px;">
+  <div class="custom-select" style="width: 200px;">
     <select id="dropbox">
       <option value="0">Select Number of Bedrooms</option>
       <option value="1">1</option>
@@ -74,7 +73,7 @@
       
     </select>
   </div>
-  <!-- edit above -->
+ 
   <label class="label" for="user-message"><b>Comments</b></label>
   <textarea class="input" id="user-message" name="Message" placeholder="Hello," cols="25" rows="10"></textarea>
   <div class="button">
@@ -82,26 +81,27 @@
   </div>
   </form>
 
-<ul>
-<li><strong>Ultimo Real Estate</strong></li>
-<li>20 Jones Street</li>
-<li>ULTIMO NSW 2007</li>
-</ul>
-
-
-<ul>
-<li><strong>Mob: +61 123 456 789</strong></li>
-<li>Tel: +612 1234 5678</li>
-<li>info@ultimorealestate.com.au</li>
-</ul>
-
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6624.85817291638!2d151.19285829205285!3d-33.87860141454631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2f6b3e5fb7%3A0xf97500fd5776ca34!2sJones%20St%2C%20Sydney%20NSW!5e0!3m2!1sen!2sau!4v1581408180870!5m2!1sen!2sau" width="570" height="500" allowfullscreen=""></iframe>
 
 </section>
 
 <section id="col2">
 
+  <ul>
+    <li><strong>Ultimo Real Estate</strong></li>
+    <li>20 Jones Street</li>
+    <li>ULTIMO NSW 2007</li>
+    </ul>
+    
+    
+    <ul>
+    <li><strong>Mob: +61 123 456 789</strong></li>
+    <li>Tel: +612 1234 5678</li>
+    <li>info@ultimorealestate.com.au</li>
+    </ul>
+    
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6624.85817291638!2d151.19285829205285!3d-33.87860141454631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2f6b3e5fb7%3A0xf97500fd5776ca34!2sJones%20St%2C%20Sydney%20NSW!5e0!3m2!1sen!2sau!4v1581408180870!5m2!1sen!2sau" width="570" height="500" allowfullscreen=""></iframe>
+    
 
 </section>
 

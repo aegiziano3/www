@@ -210,16 +210,32 @@
         border-radius: 0.5em;
     }
    
+    section {
+        width: 45%;
+        }
 
-    #dropbox {
+    /* #dropbox {
         background-color: white;
-    } */
+    } */ 
 
 
-    .grid-container {
+    /* .grid-container {
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: 2;
+    } */
+
+    /* FAQ */
+    .question {
+        padding: 1em 0;
     }
 
- 
+    .answer {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s;
+    }
+
+    .answer.open {
+        max-height: 300px;
+    }
