@@ -8,10 +8,12 @@
   <title>Ultimo Real Estate</title>
   
   <meta name="author" content="      ADD YOUR NAME AND YOUR EMAIL ADDRESS HERE     ">
-
+  <link rel="stylesheet" href="ultimo_real_estate.css">
   <link rel="stylesheet" href="styles.css">
 
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -24,37 +26,40 @@
 
 <header>
 <img src="images/ultimo_real_estate_logo.png" width="625" height="160" alt="Ultimo Real Estate, Sydney, Australia">
+<button id="navbutton">
+  <i class="fas fa-bars"></i>
+</button>
+<nav class="navigation">
+	<ul>
+	<li><a href="index.html" id="current">Home</a></li>
+	<li><a href="property.html">Property of the Week</a></li>
+	<li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
+	<li><a href="agents.html">Agents</a></li>
+	<li><a href="suburb_profile.html">Suburb Profile</a></li>
+	<li><a href="faq.html">FAQ</a></li>
+	<li><a href="contact.html">Contact</a></li>
+	</ul>
+	</nav>
+	
 </header>
 
-<nav>
-<ul>
-<li><a href="index.html" id="current">Home</a></li>
-<li><a href="property.html">Property of the Week</a></li>
-<li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
-<li><a href="agents.html">Agents</a></li>
-<li><a href="suburb_profile.html">Suburb Profile</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-
 <main>
- <!-- edit figure only -->
-<!-- <<figure>
-<img src="images/bulwara_road.jpg" width="990" height="430" alt="Bulwara Road">
-</figure> -->
+
+
+
   <div class="slider">
     <button class="btn1" onclick="prev()">Prev</button> 
   </div>
     <div class="img-box">
       <img src="images/jones_street.jpg" width="990" height="430" alt="Jones Street" class="slider-img">
+      <!-- <img src="images/bulwara_road.jpg" width="990" height="430" alt="Bulwara Road"> -->
     </div>
     <div class="slider">
       <button class="btn1" onclick="next()">Next</button> 
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="slide_show.js"></script>
 
 </main>
 
