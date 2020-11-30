@@ -1,6 +1,6 @@
 @media screen and (max-width: 576px) {
 
-* {
+* head {
     margin: 0em;
     padding: 0em;
     font-size: 100%;
@@ -245,7 +245,7 @@
       .header {
         display: grid;
         grid-template-rows: auto auto;
-        /* background-color: bisque; */
+     
       }
       
       .navigation {
@@ -261,6 +261,7 @@
         font-size: 32px;
         color: black;
         display: block;
+        border: hidden;
       }
       
 
