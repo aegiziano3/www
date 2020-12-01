@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 
@@ -6,15 +6,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>  INSERT TITLE HERE   </title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
   <meta name="author" content="      ADD YOUR NAME AND YOUR EMAIL ADDRESS HERE     ">
   <link rel="stylesheet" href="ultimo_real_estate.css">
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.2.0/d3.min.js"></script>
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
   <script src="contact.js"></script>
 </head>
 
@@ -26,9 +21,6 @@
 
 <header>
 <img src="images/ultimo_real_estate_logo.png" width="625" height="160" alt="Ultimo Real Estate, Sydney, Australia">
-<button id="navbutton">
-  <i class="fas fa-bars"></i>
-</button>
 
 <nav class="navigation">
 	<ul>
@@ -50,18 +42,18 @@
 
 <h1>Contact Us</h1>
 
-<form id="contact" method="POST" action="formprocess.PHP" id="form" onsubmit="return formValidate()" novalidate>
+<form method="POST" action="formprocess.PHP" id="form" onsubmit="return formValidate()" novalidate>
   <h2>Property Enquiry</h2>
   <label class="label" for="name">Name:*</label>
   <input type="text" class="input" id="name" name="name" placeholder="Jane Smith">
   <label class="label" for="mobile">Mobile:*</label>
-  <input type="text" class="input" id="phone" name="phone" placeholder="0412345678">
+  <input type="text" class="input" id="mobile" name="mobile" placeholder="0412345678">
   <label class="label" for="email">Email:*</label>
   <input type="email" class="input" id="email" name="email" placeholder="jane@example.com">
-  <label class="label" for="bsr" id="bsr" name="bsr"> <b>Do you want to Buy or Sell or Rent?</b></label>
-  <lable class="label">Buy: </lable><input type="radio">
-  <lable class="label">Sell: </lable><input type="radio">
-  <lable class="label">Rent: </lable><input type="radio">
+  <label><b>Do you want to Buy or Sell or Rent?</b></label>
+  <lable class="label">Buy: </lable><input type="radio" name="bsr">
+  <lable class="label">Sell: </lable><input type="radio" name="bsr">
+  <lable class="label">Rent: </lable><input type="radio" name="bsr">
   <label class="label" for="property-type"><b>What property type/s are you interested in?</b> </label>
   <lable class="label">Unit: </lable><input type="checkbox">
   <lable class="label">Townhouse: </lable><input type="checkbox">
@@ -82,7 +74,7 @@
   <label class="label" for="comments"><b>Comments</b></label>
   <textarea class="input" id="comments" name="comments" placeholder="Hello," cols="25" rows="10"></textarea>
   <div class="button">
-  <input type="submit">
+  <input type="submit" name="Submit Enquiry">
   </div>
   </form>
 
