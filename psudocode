@@ -30,7 +30,7 @@ if email does not = value
     return false
 
 if true
-    confirm "Are you sure you want to submit this form?"
+    confirm "Are you sure you want to submit this enquiry?"
     
     if yes
     alert "thank you for your message"
