@@ -1,0 +1,41 @@
+- - Forms are validated before any processing takes place.
+
+ if(!validName) {
+      alert(userName + "  is not a valid name.");
+      form.name.focus();
+      form.name.select();
+      return false;
+  }else if (!validPhone) {
+      alert(userMobile + "  is not a vaild phone number");
+      form.mobile.focus();
+      form.mobile.select();
+      return false;
+  }else if (!validEmail) {
+      alert(userEmail + "  is not a valid email address");
+      form.email.focus();
+      form.email.select();
+      return false;
+  }
+  if(confirm("Are you sure you want to submit this form?\nYour name: " + 
+             userName + "\n" + "Your Phone:" + userMobile + "\n" 
+			 + "Your email:" + userEmail + "\n" + "Buy:" + buy)) {
+      alert("Thank you for your enquriy");
+      return true;
+  }else{
+      return false;
+  }
+
+}
+
+
+
+
+
+
+-- Data is cleaned before insertion into database.
+
+
+
+
+
+-- Protection is implemented against XSS, SQL injection and CSRF.
